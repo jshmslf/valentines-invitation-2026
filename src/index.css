@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-50vh) translateX(20px) rotate(180deg);
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(-20px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.floating-hearts {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.floating-heart {
+  position: absolute;
+  bottom: -50px;
+  animation: float 5s infinite ease-in-out;
+}
+
+.floating-heart:nth-child(1) {
+  left: 5%;
+  animation-delay: 0s;
+}
+.floating-heart:nth-child(2) {
+  left: 15%;
+  animation-delay: 1s;
+}
+.floating-heart:nth-child(3) {
+  left: 25%;
+  animation-delay: 2s;
+}
+.floating-heart:nth-child(4) {
+  left: 35%;
+  animation-delay: 0.5s;
+}
+.floating-heart:nth-child(5) {
+  left: 45%;
+  animation-delay: 1.5s;
+}
+.floating-heart:nth-child(6) {
+  left: 55%;
+  animation-delay: 2.5s;
+}
+.floating-heart:nth-child(7) {
+  left: 65%;
+  animation-delay: 0.8s;
+}
+.floating-heart:nth-child(8) {
+  left: 75%;
+  animation-delay: 1.8s;
+}
+.floating-heart:nth-child(9) {
+  left: 85%;
+  animation-delay: 2.2s;
+}
+.floating-heart:nth-child(10) {
+  left: 95%;
+  animation-delay: 0.3s;
+}
+.floating-heart:nth-child(11) {
+  left: 10%;
+  animation-delay: 1.2s;
+}
+.floating-heart:nth-child(12) {
+  left: 30%;
+  animation-delay: 2.8s;
+}
+.floating-heart:nth-child(13) {
+  left: 50%;
+  animation-delay: 0.6s;
+}
+.floating-heart:nth-child(14) {
+  left: 70%;
+  animation-delay: 1.4s;
+}
+.floating-heart:nth-child(15) {
+  left: 90%;
+  animation-delay: 2.4s;
+}
+.floating-heart:nth-child(16) {
+  left: 20%;
+  animation-delay: 1.1s;
+}
+.floating-heart:nth-child(17) {
+  left: 40%;
+  animation-delay: 2.1s;
+}
+.floating-heart:nth-child(18) {
+  left: 60%;
+  animation-delay: 0.9s;
+}
+.floating-heart:nth-child(19) {
+  left: 80%;
+  animation-delay: 1.9s;
+}
+.floating-heart:nth-child(20) {
+  left: 95%;
+  animation-delay: 2.6s;
+}
+
+.animate-shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-in-out;
+}
+
+@keyframes panic {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-4px);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+  75% {
+    transform: translateX(-2px);
+  }
+}
+
+.animate-panic {
+  animation: panic 0.25s ease-in-out;
+}
